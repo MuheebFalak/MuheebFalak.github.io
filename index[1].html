@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muheeb Falak | Professional Graphic Designer</title>
+  <meta name="description" content="Muheeb Falak — Professional Graphic Designer from Sialkot, Pakistan. Creative, logo, business card, social media, poster, web, flex and branding design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0d1728;
+      --navy2:#16253b;
+      --gold:#d9bd7a;
+      --gold2:#f2dfad;
+      --cream:#f7f0df;
+      --muted:#bfc5cf;
+      --line:rgba(217,189,122,.38);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Montserrat,Arial,sans-serif;
+      color:var(--cream);
+      background:
+        radial-gradient(circle at 15% 10%,rgba(217,189,122,.10),transparent 25%),
+        radial-gradient(circle at 85% 80%,rgba(217,189,122,.08),transparent 28%),
+        linear-gradient(135deg,#09111f,#17263b 50%,#0b1423);
+      min-height:100vh;
+    }
+    body:before{
+      content:"";position:fixed;inset:0;pointer-events:none;opacity:.09;
+      background-image:linear-gradient(45deg,rgba(255,255,255,.08) 1px,transparent 1px);
+      background-size:5px 5px;
+    }
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:10;
+      background:rgba(7,14,25,.82);backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{max-width:1120px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-family:Cinzel,serif;font-weight:700;color:var(--gold2);font-size:20px}
+    .links{display:flex;gap:22px;list-style:none}
+    .links a{color:#eee;text-decoration:none;font-size:13px;font-weight:600}
+    .links a:hover{color:var(--gold2)}
+    .hero{min-height:100vh;display:grid;place-items:center;padding:120px 22px 70px}
+    .hero-box{max-width:1120px;width:100%;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+    .eyebrow{color:var(--gold);letter-spacing:4px;font-size:12px;font-weight:700;margin-bottom:14px}
+    h1{font-family:Cinzel,serif;font-size:clamp(42px,7vw,78px);line-height:1.02;color:var(--gold2);text-shadow:0 4px 18px #000}
+    .title{font-size:clamp(17px,2.5vw,25px);margin:14px 0 22px;color:#fff}
+    .intro{color:var(--muted);line-height:1.8;max-width:640px}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-block;padding:14px 20px;border-radius:7px;text-decoration:none;font-weight:700;font-size:13px;border:1px solid var(--gold)}
+    .primary{background:linear-gradient(135deg,#b8954c,#f0d998);color:#101827}
+    .secondary{color:var(--gold2);background:rgba(255,255,255,.03)}
+    .card-wrap{position:relative}
+    .card-wrap:after{content:"";position:absolute;inset:12px -10px -10px 10px;border:1px solid var(--line);border-radius:20px;z-index:-1}
+    .card-wrap img{width:100%;display:block;border-radius:18px;border:1px solid var(--gold);box-shadow:0 25px 70px rgba(0,0,0,.5)}
+    section{max-width:1120px;margin:auto;padding:90px 22px}
+    .section-head{text-align:center;margin-bottom:42px}
+    .section-head h2{font-family:Cinzel,serif;color:var(--gold2);font-size:34px}
+    .section-head p{color:var(--muted);margin-top:10px}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .service{padding:25px 18px;text-align:center;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));transition:.25s}
+    .service:hover{transform:translateY(-5px);border-color:var(--gold)}
+    .icon{font-size:28px;margin-bottom:12px}
+    .service h3{font-size:15px;color:#fff;margin-bottom:8px}
+    .service p{font-size:12px;line-height:1.6;color:var(--muted)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .panel{border:1px solid var(--line);border-radius:16px;padding:30px;background:rgba(255,255,255,.035)}
+    .panel h3{font-family:Cinzel,serif;color:var(--gold2);margin-bottom:15px}
+    .panel p{color:var(--muted);line-height:1.85}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .contact{padding:24px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035)}
+    .contact strong{display:block;color:var(--gold2);margin-bottom:7px}
+    .contact a{color:#fff;text-decoration:none;word-break:break-word}
+    footer{border-top:1px solid var(--line);text-align:center;padding:28px 20px;color:#9299a5;font-size:12px}
+    .gold-line{width:90px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:14px auto 0}
+    @media(max-width:850px){
+      .hero-box,.about{grid-template-columns:1fr}
+      .hero{padding-top:110px}
+      .card-wrap{max-width:650px;margin:auto}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+      .links{display:none}
+    }
+    @media(max-width:500px){.services{grid-template-columns:1fr}.nav-inner{justify-content:center}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="brand">MUHEEB FALAK</div>
+      <ul class="links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-box">
+        <div>
+          <div class="eyebrow">CREATIVE • PREMIUM • PROFESSIONAL</div>
+          <h1>Muheeb Falak</h1>
+          <div class="title">Professional Graphic Designer</div>
+          <p class="intro">Creative visual solutions for brands, businesses and social media. From logos and business cards to posters, web graphics and complete branding.</p>
+          <div class="buttons">
+            <a class="btn primary" href="#contact">LET'S WORK TOGETHER</a>
+            <a class="btn secondary" href="mailto:muheebfalak57@gmail.com">EMAIL ME</a>
+          </div>
+        </div>
+        <div class="card-wrap">
+          <img src="assets/muheeb-falak-card.jpg" alt="Muheeb Falak professional graphic designer card">
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-head">
+        <h2>My Services</h2>
+        <div class="gold-line"></div>
+        <p>Design services for a strong and memorable visual identity.</p>
+      </div>
+      <div class="services">
+        <div class="service"><div class="icon">🎨</div><h3>Creative Design</h3><p>Unique visual concepts tailored to your needs.</p></div>
+        <div class="service"><div class="icon">✦</div><h3>Logo Design</h3><p>Professional logos that make your brand recognizable.</p></div>
+        <div class="service"><div class="icon">▣</div><h3>Business Card</h3><p>Elegant business cards with a premium look.</p></div>
+        <div class="service"><div class="icon">◈</div><h3>Social Media</h3><p>Scroll-stopping posts, covers and social graphics.</p></div>
+        <div class="service"><div class="icon">▤</div><h3>Poster Design</h3><p>Eye-catching posters for promotions and events.</p></div>
+        <div class="service"><div class="icon">◎</div><h3>Web Design</h3><p>Clean and modern visual design for websites.</p></div>
+        <div class="service"><div class="icon">▱</div><h3>Flex Design</h3><p>Large-format designs for shops, events and advertising.</p></div>
+        <div class="service"><div class="icon">◇</div><h3>Branding</h3><p>Consistent visual identity across your brand.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <h2>About Muheeb</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="about">
+        <div class="panel">
+          <h3>Creative Mind. Premium Design.</h3>
+          <p>I am Muheeb Falak, a professional graphic designer based in Sialkot, Pakistan. I focus on clean, creative and premium-looking designs that help people and businesses present themselves professionally.</p>
+        </div>
+        <div class="panel">
+          <h3>Let's Create Something Amazing</h3>
+          <p>Have a logo, social media design, poster, business card or branding project in mind? Get in touch and let's turn your idea into a polished visual identity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">
+        <h2>Contact Me</h2>
+        <div class="gold-line"></div>
+        <p>Ready to start a project? Reach out directly.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact"><strong>Phone</strong><a href="tel:+923460543128">+92 346 0543128</a></div>
+        <div class="contact"><strong>Email</strong><a href="mailto:muheebfalak57@gmail.com">muheebfalak57@gmail.com</a></div>
+        <div class="contact"><strong>Location</strong><span>Sialkot, Pakistan</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Muheeb Falak. All rights reserved. • Let's create something amazing together.</footer>
+</body>
+</html>
